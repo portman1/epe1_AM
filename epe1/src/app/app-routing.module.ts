@@ -9,6 +9,8 @@ const routes: Routes = [
   { path: 'acerca', loadChildren: './acerca/acerca.module#AcercaPageModule' },
   { path: 'calculodos', loadChildren: './calculodos/calculodos.module#CalculodosPageModule' },  { path: 'scalculo', loadChildren: './scalculo/scalculo.module#ScalculoPageModule' },
   { path: 'scalculo2', loadChildren: './scalculo2/scalculo2.module#Scalculo2PageModule' },
+  { path: 'ncalculo', loadChildren: './ncalculo/ncalculo.module#NcalculoPageModule' },
+  { path: 'ncalculo2', loadChildren: './ncalculo2/ncalculo2.module#Ncalculo2PageModule' },
 
 ];
 
