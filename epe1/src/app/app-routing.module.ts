@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'menu', loadChildren: './menu/menu.module#MenuPageModule' },
   { path: 'calculo', loadChildren: './calculo/calculo.module#CalculoPageModule' },
   { path: 'acerca', loadChildren: './acerca/acerca.module#AcercaPageModule' },
+  { path: 'calculodos', loadChildren: './calculodos/calculodos.module#CalculodosPageModule' },
 ];
 
 @NgModule({
