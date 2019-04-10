@@ -18,11 +18,11 @@ export class MenuPage implements OnInit {
   IrCalculo2(){
     this.navCtrl.navigateForward('calculodos');
   }
-  IrNoventa(){
-    this.navCtrl.navigateForward('noventa');
+  IrScalculo(){
+    this.navCtrl.navigateForward('scalculo');
   }
-  irCien(){
-    this.navCtrl.navigateForward('cien');
+  IrScalculo2(){
+    this.navCtrl.navigateForward('scalculo2');
   }
 
 }
