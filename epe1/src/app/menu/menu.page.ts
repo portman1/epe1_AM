@@ -15,8 +15,8 @@ export class MenuPage implements OnInit {
   irCalculo(){
     this.navCtrl.navigateForward('calculo');
   }
-  AbrirS(){
-    this.navCtrl.navigateForward('sesenta');
+  IrCalculo2(){
+    this.navCtrl.navigateForward('calculodos');
   }
   IrNoventa(){
     this.navCtrl.navigateForward('noventa');

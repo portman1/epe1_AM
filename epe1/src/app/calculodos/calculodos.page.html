@@ -1,9 +1,55 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>calculodos</ion-title>
+    <ion-title>CALCULO 32 horas + EXAMEN</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+  <ion-item>
+
+
+    <ion-input placeholder="EPE1" [(ngModel)]="EPE1"></ion-input>
+  </ion-item>
+  <ion-item>
+
+
+    <ion-input placeholder="EPE2" [(ngModel)]="EPE2"></ion-input>
+  </ion-item>
+  <ion-item>
+
+
+    <ion-input placeholder="EPE3" [(ngModel)]="EPE3"></ion-input>
+  </ion-item>
+
+  <ion-item>
+
+
+    <ion-input placeholder="EVA1" [(ngModel)]="EVA1"></ion-input>
+  </ion-item>
+  <ion-item>
+
+
+    <ion-input placeholder="EVA2" [(ngModel)]="EVA2"></ion-input>
+  </ion-item>
+
+  <ion-item>
+
+
+    <ion-input placeholder="EXA" [(ngModel)]="EXA"></ion-input>
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-button color="success" (click)="verResultado()">CALCULAR
+
+    </ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-input>{{total}}</ion-input>
+  </ion-item>
+
+  <ion-button (click)="irVolver()">Volver</ion-button>
+
 
 </ion-content>

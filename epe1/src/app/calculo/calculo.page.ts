@@ -22,12 +22,12 @@ export class CalculoPage implements OnInit {
   EVA1: any;
   EVA2: any;
  
-  EXA: any;
+  
 
   total: any;
 
 verResultado(){
-  this.total=(parseFloat(this.EPE1)* 0.07 )+ (parseFloat(this.EPE2)*0.14 )+ (parseFloat(this.EPE3)*0.21 ) + (parseFloat(this.EVA1)*0.14 )+  (parseFloat(this.EVA2)*0.14)+ (parseFloat(this.EXA)*0.30);
+  this.total=(parseFloat(this.EPE1)* 0.1 )+ (parseFloat(this.EPE2)*0.2 )+ (parseFloat(this.EPE3)*0.3 ) + (parseFloat(this.EVA1)*0.2 )+  (parseFloat(this.EVA2)*0.2);
 }
 
   ngOnInit() {
