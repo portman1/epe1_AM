@@ -7,7 +7,9 @@ const routes: Routes = [
   { path: 'menu', loadChildren: './menu/menu.module#MenuPageModule' },
   { path: 'calculo', loadChildren: './calculo/calculo.module#CalculoPageModule' },
   { path: 'acerca', loadChildren: './acerca/acerca.module#AcercaPageModule' },
-  { path: 'calculodos', loadChildren: './calculodos/calculodos.module#CalculodosPageModule' },
+  { path: 'calculodos', loadChildren: './calculodos/calculodos.module#CalculodosPageModule' },  { path: 'scalculo', loadChildren: './scalculo/scalculo.module#ScalculoPageModule' },
+  { path: 'scalculo2', loadChildren: './scalculo2/scalculo2.module#Scalculo2PageModule' },
+
 ];
 
 @NgModule({
