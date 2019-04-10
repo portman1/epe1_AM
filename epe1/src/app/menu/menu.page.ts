@@ -30,5 +30,11 @@ export class MenuPage implements OnInit {
   IrNcalculo2(){
     this.navCtrl.navigateForward('ncalculo2');
   }
+  IrCcalculo(){
+    this.navCtrl.navigateForward('ccalculo');
+  }
+  IrCcalculo2(){
+    this.navCtrl.navigateForward('ccalculo2');
+  }
 
 }
