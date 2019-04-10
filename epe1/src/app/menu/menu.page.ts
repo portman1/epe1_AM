@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NavController} from '@ionic/angular';
+import {NavController, ToastController} from '@ionic/angular';
 
 @Component({
   selector: 'app-menu',
@@ -8,14 +8,14 @@ import {NavController} from '@ionic/angular';
 })
 export class MenuPage implements OnInit {
 
-  constructor(public navCtrl : NavController) { }
+  constructor(public navCtrl : NavController, toast : ToastController) { }
 
   ngOnInit() {
   }
   irCalculo(){
     this.navCtrl.navigateForward('calculo');
   }
-  irSesenta(){
+  AbrirS(){
     this.navCtrl.navigateForward('sesenta');
   }
   IrNoventa(){
