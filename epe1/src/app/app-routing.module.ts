@@ -11,6 +11,8 @@ const routes: Routes = [
   { path: 'scalculo2', loadChildren: './scalculo2/scalculo2.module#Scalculo2PageModule' },
   { path: 'ncalculo', loadChildren: './ncalculo/ncalculo.module#NcalculoPageModule' },
   { path: 'ncalculo2', loadChildren: './ncalculo2/ncalculo2.module#Ncalculo2PageModule' },
+  { path: 'ccalculo', loadChildren: './ccalculo/ccalculo.module#CcalculoPageModule' },
+  { path: 'ccalculo2', loadChildren: './ccalculo2/ccalculo2.module#Ccalculo2PageModule' },
 
 ];
 
