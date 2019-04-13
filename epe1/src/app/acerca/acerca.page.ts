@@ -11,7 +11,7 @@ export class AcercaPage implements OnInit {
   async verAlerta(){
     const alert = await this.alertCtrl.create({
       header: 'Integrantes',
-      subHeader: 'N OS',
+      subHeader: 'IPCHILE',
       message: 'Hector Navarro - Luis Sánchez',
       buttons: ['ACEPTAR']
     });

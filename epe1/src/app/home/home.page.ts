@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NavController} from '@ionic/angular';
+import {NavController, AlertController} from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,14 +7,20 @@ import {NavController} from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-constructor(public navCtrl : NavController){}
+constructor(public navCtrl : NavController,
+  public alertCtrl: AlertController){}
   irMenu(){
     this.navCtrl.navigateForward('menu');
 
   }
-  irAcerca(){
-    this.navCtrl.navigateForward('acerca');
-
+  async verAlerta(){
+    const alert = await this.alertCtrl.create({
+      header: 'Integrantes',
+      subHeader: 'N OS',
+      message: 'Hector Navarro - Luis Sánchez',
+      buttons: ['ACEPTAR']
+    });
+    alert.present();
   }
 }
 
