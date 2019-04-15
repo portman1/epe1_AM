@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NavController, ToastController} from '@ionic/angular';
 
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.page.html',
@@ -8,8 +9,15 @@ import {NavController, ToastController} from '@ionic/angular';
 })
 export class MenuPage implements OnInit {
 
-  constructor(public navCtrl : NavController, toast : ToastController) { }
-
+  constructor(public navCtrl : NavController, Public toast : ToastController) { }
+async verToast(){
+  const  toast = await this.navCtrl.create({
+    message: 'hola estudiante',
+    duration:1000,
+    position:'middle'
+  })
+  toast.present();
+}
   ngOnInit() {
   }
   irCalculo(){
