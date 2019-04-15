@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NavController, AlertController} from '@ionic/angular';
+import {NavController, AlertController, ToastController} from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +8,8 @@ import {NavController, AlertController} from '@ionic/angular';
 })
 export class HomePage {
 constructor(public navCtrl : NavController,
-  public alertCtrl: AlertController){}
+  public alertCtrl: AlertController,
+  public toastCtrl: ToastController){}
   irMenu(){
     this.navCtrl.navigateForward('menu');
 
@@ -21,6 +22,16 @@ constructor(public navCtrl : NavController,
       buttons: ['ACEPTAR']
     });
     alert.present();
+  }
+  async verToast(){
+
+    const toast = await this.toastCtrl.create({
+      message:"Bienvenido al Menú de notas",
+      duration: 10000,
+      position: 'bottom'
+    });
+
+    toast.present();
   }
 }
 
