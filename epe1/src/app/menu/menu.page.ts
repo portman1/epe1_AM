@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {NavController, ToastController} from '@ionic/angular';
 import { async } from '@angular/core/testing';
 
-
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.page.html',
@@ -10,7 +9,6 @@ import { async } from '@angular/core/testing';
 })
 export class MenuPage implements OnInit {
 
-<<<<<<< HEAD
   constructor(public navCtrl : NavController, public toastCtrl : ToastController) { }
   async verToast(){
 
@@ -85,17 +83,6 @@ export class MenuPage implements OnInit {
     toast.present();
   }
 
-=======
-  constructor(public navCtrl : NavController, Public toast : ToastController) { }
-async verToast(){
-  const  toast = await this.navCtrl.create({
-    message: 'hola estudiante',
-    duration:1000,
-    position:'middle'
-  })
-  toast.present();
-}
->>>>>>> 471afbcf2b3c7fbd9b71d02c7b58d43bf0327a17
   ngOnInit() {
   }
   irCalculo(){
