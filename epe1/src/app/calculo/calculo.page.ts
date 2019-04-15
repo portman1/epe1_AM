@@ -9,6 +9,7 @@ import { Button } from 'protractor';
   styleUrls: ['./calculo.page.scss'],
 })
 export class CalculoPage implements OnInit {
+  categories: any[];
 
   constructor(public toastCtrl : ToastController,
    public navCtrl : NavController,
@@ -64,6 +65,14 @@ export class CalculoPage implements OnInit {
     });
     alert.present();
   }
+}
+
+buttonReset() {
+  this.EPE1 = [];
+  this.EPE2 = [];
+  this.EPE3 = [];
+  this.EVA1 = [];
+  this.EVA2 = [];
 }
 
   ngOnInit() {

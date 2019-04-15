@@ -63,6 +63,14 @@ export class CalculodosPage implements OnInit {
     alert.present();
   }
 }
+buttonReset() {
+  this.EPE1 = [];
+  this.EPE2 = [];
+  this.EPE3 = [];
+  this.EVA1 = [];
+  this.EVA2 = [];
+  this.EXA = [];
+}
 
 
 
