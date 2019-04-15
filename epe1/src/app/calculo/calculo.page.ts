@@ -14,6 +14,18 @@ export class CalculoPage implements OnInit {
   constructor(public toastCtrl : ToastController,
    public navCtrl : NavController,
    public alertCtrl: AlertController) { }
+ async verToast(){
+
+    const toast = await this.toastCtrl.create({
+      message:"Atrás",
+      duration: 10000,
+      position: 'bottom'
+    });
+
+    toast.present();
+  }
+
+
     irVolver(){
       this.navCtrl.navigateBack('menu');
     }
