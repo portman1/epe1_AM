@@ -61,7 +61,7 @@ export class Scalculo2Page implements OnInit {
     }else{
       const alert = await this.alertCtrl.create({
         header: 'Nota Final',
-        message: 'Su nota de presentación es: ' + this.total,
+        message: 'Su nota de presentación es: ' + this.total+ " y has aprobado el ramo :D",
         buttons: ['aceptar']
       });
       alert.present();

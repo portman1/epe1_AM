@@ -54,17 +54,17 @@ async verResultado1(){
     }
 
 
-    if(this.EPE1<4 || this.EPE2<4  || this.EPE3<4 || this.EPE4 || this.eva<1 && this.total>=5.5){
+    if(this.EPE1<4 || this.EPE2<4  || this.EPE3<4 || this.EPE4<4 || this.eva<1.0 && this.total>=5.5){
       const alert = await this.alertCtrl.create({
         header: 'Promedio',
-        message: 'Su promedio es: ' + this.total +" y debe dar examen, por que tienes un rojo en una EPE o EVa :C",
+        message: 'Su promedio es: ' + this.total +" y debe dar examen, por que tienes un rojo en una EPE o EVA :C",
         buttons: ['aceptar']
     });
     alert.present();
     }else{
       const alert = await this.alertCtrl.create({
         header: 'Nota Final',
-        message: 'Su nota de presentación es: ' + this.total,
+        message: 'Su nota de presentación es: ' + this.total +" y has aprobado el ramo :D",
         buttons: ['aceptar']
       });
       alert.present();
@@ -74,6 +74,8 @@ async verResultado1(){
  async verResultado(){
     this.total=(parseFloat(this.EPE1)* 0.07 )+ (parseFloat(this.EPE2)*0.105 )+ (parseFloat(this.EPE3)*0.175 ) + (parseFloat(this.EPE4)*0.175 )+ (parseFloat(this.EVA1)*0.035 )+  (parseFloat(this.EVA2)*0.035)+ (parseFloat(this.EVA3)*0.035)+ (parseFloat(this.EVA4)*0.07)+(parseFloat(this.EXA)*0.3);
 
+
+    
     var prom = this.total.toString();
     var redondeo = prom.substring(3, 4);
     var redondeado = parseInt(redondeo);

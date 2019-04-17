@@ -54,14 +54,14 @@ export class Ncalculo2Page implements OnInit {
   if(this.EPE1<4 || this.EPE2<4  || this.EPE3<4 || this.eva<1.6 && this.total>=5.5){
     const alert = await this.alertCtrl.create({
       header: 'Promedio',
-      message: 'Su promedio es: ' + this.total +" y debe dar examen, por que tienes un rojo en una EPE o EVa :C",
+      message: 'Su promedio es: ' + this.total +" y debe dar examen, por que tienes un rojo en una EPE o EVA :C",
       buttons: ['aceptar']
   });
   alert.present();
   }else{
     const alert = await this.alertCtrl.create({
       header: 'Nota Final',
-      message: 'Su nota de presentación es: ' + this.total,
+      message: 'Su nota de presentación es: ' + this.total+" y has aprobado el ramo :D" ,
       buttons: ['aceptar']
     });
     alert.present();
