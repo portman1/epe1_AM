@@ -23,7 +23,7 @@ export class MenuPage implements OnInit {
 
     const toast = await this.toastCtrl.create({
       message:"Abriendo 32 horas + examen",
-      duration: 10000,
+      duration: 1000,
       position: 'bottom'
     });
     toast.present();
@@ -32,7 +32,7 @@ export class MenuPage implements OnInit {
 
     const toast = await this.toastCtrl.create({
       message:"Abriendo 64 horas",
-      duration: 10000,
+      duration: 1000,
       position: 'bottom'
     });
     toast.present();
@@ -41,7 +41,7 @@ export class MenuPage implements OnInit {
 
     const toast = await this.toastCtrl.create({
       message:"Abriendo 64 horas + examen",
-      duration: 10000,
+      duration: 1000,
       position: 'bottom'
     });
     toast.present();
@@ -50,7 +50,7 @@ export class MenuPage implements OnInit {
 
     const toast = await this.toastCtrl.create({
       message:"Abriendo 96 horas",
-      duration: 10000,
+      duration: 1000,
       position: 'bottom'
     });
     toast.present();
@@ -59,7 +59,7 @@ export class MenuPage implements OnInit {
 
     const toast = await this.toastCtrl.create({
       message:"Abriendo 96 horas + examen"  ,
-      duration: 10000,
+      duration: 1000,
       position: 'bottom'
     });
     toast.present();
@@ -68,7 +68,7 @@ export class MenuPage implements OnInit {
 
     const toast = await this.toastCtrl.create({
       message:"Abriendo 128 horas",
-      duration: 10000,
+      duration: 1000,
       position: 'bottom'
     });
     toast.present();
@@ -77,7 +77,7 @@ export class MenuPage implements OnInit {
 
     const toast = await this.toastCtrl.create({
       message:"Abriendo 128 horas + examen",
-      duration: 10000,
+      duration: 1000,
       position: 'bottom'
     });
     toast.present();

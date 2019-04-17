@@ -14,6 +14,11 @@ constructor(public navCtrl : NavController,
     this.navCtrl.navigateForward('menu');
 
   }
+
+  IrAcerca(){
+    this.navCtrl.navigateForward('acercados');
+  }
+
   async verAlerta(){
     const alert = await this.alertCtrl.create({
       header: 'Integrantes',
@@ -27,11 +32,22 @@ constructor(public navCtrl : NavController,
 
     const toast = await this.toastCtrl.create({
       message:"Bienvenido al Menú de notas",
-      duration: 10000,
+      duration: 1000,
       position: 'bottom'
     });
 
     toast.present();
   }
+  async verToast1(){
+
+    const toast = await this.toastCtrl.create({
+      message:"Abriendo Integrantes",
+      duration: 1000,
+      position: 'bottom'
+    });
+
+    toast.present();
+  }
+  
 }
 

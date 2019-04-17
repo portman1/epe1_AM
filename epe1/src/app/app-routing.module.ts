@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'ncalculo2', loadChildren: './ncalculo2/ncalculo2.module#Ncalculo2PageModule' },
   { path: 'ccalculo', loadChildren: './ccalculo/ccalculo.module#CcalculoPageModule' },
   { path: 'ccalculo2', loadChildren: './ccalculo2/ccalculo2.module#Ccalculo2PageModule' },
+  { path: 'acercados', loadChildren: './acercados/acercados.module#AcercadosPageModule' },
 
 ];
 
