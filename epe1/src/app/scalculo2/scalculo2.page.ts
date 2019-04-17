@@ -51,6 +51,17 @@ export class Scalculo2Page implements OnInit {
       }
     }
 
+    
+    if(this.EPE1>7 || this.EPE2>7 || this.EPE3>7 || this.EVA1>7 || this.EVA2>7 || this.EXA>7){
+      const alert = await this.alertCtrl.create({
+        header: 'Advertencia',
+        message: 'Ingrese notas validas.',
+        buttons: ['aceptar']
+      });
+      alert.present();
+    }else{
+    
+
     if(this.EPE1<4 || this.EPE2<4  || this.EPE3<4 || this.eva<1.6 && this.total>=5.5){
       const alert = await this.alertCtrl.create({
         header: 'Promedio',
@@ -67,6 +78,7 @@ export class Scalculo2Page implements OnInit {
       alert.present();
     }
   }    
+}
   
 
   async verResultado() {
@@ -87,6 +99,7 @@ export class Scalculo2Page implements OnInit {
         this.total = n;
       }
     }
+    
 
 
     this.total = this.total

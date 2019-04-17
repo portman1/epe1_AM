@@ -52,6 +52,15 @@ async verResultado1(){
         this.total = n;
       }
     }
+    
+    if(this.EPE1>7 || this.EPE2>7 || this.EPE3>7 || this.EVA1>7 || this.EVA2>7 || this.EXA>7){
+      const alert = await this.alertCtrl.create({
+        header: 'Advertencia',
+        message: 'Ingrese notas validas.',
+        buttons: ['aceptar']
+      });
+      alert.present();
+    }else{
 
 
     if(this.EPE1<4 || this.EPE2<4  || this.EPE3<4 || this.EPE4<4 || this.eva<1.0 && this.total>=5.5){
@@ -70,6 +79,7 @@ async verResultado1(){
       alert.present();
     }
   }    
+}
 
  async verResultado(){
     this.total=(parseFloat(this.EPE1)* 0.07 )+ (parseFloat(this.EPE2)*0.105 )+ (parseFloat(this.EPE3)*0.175 ) + (parseFloat(this.EPE4)*0.175 )+ (parseFloat(this.EVA1)*0.035 )+  (parseFloat(this.EVA2)*0.035)+ (parseFloat(this.EVA3)*0.035)+ (parseFloat(this.EVA4)*0.07)+(parseFloat(this.EXA)*0.3);
